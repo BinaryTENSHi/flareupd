@@ -1,0 +1,5 @@
+export CF_API_KEY=""
+export CF_API_EMAIL=""
+export CF_ZONE_ID=""
+export REFRESH=""
+export RECORD=""
