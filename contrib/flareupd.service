@@ -1,0 +1,15 @@
+[Unit]
+Description=Cloudflare dyndns updater
+
+[Service]
+Environment=CF_API_KEY=
+Environment=CF_API_EMAIL=
+Environment=CF_ZONE_NAME=
+Environment=ENTRY=
+Environment=REFRESH=
+
+Type=simple
+ExecStart=/usr/local/bin/flareupd
+
+[Install]
+WantedBy=multi-user.target
